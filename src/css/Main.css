@@ -23,10 +23,6 @@
 .main-content p{
     margin-top: 30px;
 }
-.main-content a{
-    display: inline-block;
-    margin-top: 30px;
-}
 .located-at{
     position: absolute;
     bottom: 30px;

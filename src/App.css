@@ -6,6 +6,10 @@
 a{
   cursor: pointer;
 }
+p{
+  color: #BEE0F4;
+  line-height: 25px;
+}
 
 .vertical-gradient{
   width: 100%;
@@ -28,6 +32,8 @@ a{
 }
 /* Gradient Buttons */
 .gradient-btn{
+  display: inline-block;
+  margin-top: 30px;
   padding: 15px 35px;
   border-radius: 50px;
   background-color: rgb(21, 147, 151);
