@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  cursor: pointer;
+}
 
 .vertical-gradient{
   width: 100%;
@@ -22,4 +25,10 @@
 .full-90{
   width: 100%;
   padding: 0 5%;
+}
+/* Gradient Buttons */
+.gradient-btn{
+  padding: 15px 35px;
+  border-radius: 50px;
+  background-color: rgb(21, 147, 151);
 }

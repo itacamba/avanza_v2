@@ -1,5 +1,4 @@
 #header{
-    border:1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,12 +6,14 @@
     padding-bottom: 30px;
     position: fixed;
     color: #f2f2f2;
+    z-index: 1;
 }
 .nav {
     display: flex;
 }
 .nav a{
     padding-left: 35px;
+    cursor: pointer;
 }
 .menu-icon{
     width: 35px;

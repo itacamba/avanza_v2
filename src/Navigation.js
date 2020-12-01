@@ -82,7 +82,7 @@ const Navigation = () => {
             </div>
 
             <div className="phone-call">
-                <a href="#!"><i class="fas fa-phone-alt"></i></a>
+                <a href="#!"><i className="fas fa-phone-alt"></i></a>
             </div>
 
             <nav className="nav">
