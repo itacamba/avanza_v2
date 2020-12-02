@@ -1,0 +1,16 @@
+#approach{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#approach > p{
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#approach .two-column-row{
+   margin-top: 30px;
+}

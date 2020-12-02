@@ -1,4 +1,5 @@
 import React from 'react';
+import Approach from './Approach';
 import Main from "./Main"
 import Services from './Services';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Main/>
             <Services/>
+            <Approach/>
         </div>
     );
 };
