@@ -4,13 +4,39 @@
     background-color: blue;
     display: flex;
     flex-direction: column;
+    color: #fff;
+}
+#approach > h2{
     text-align: center;
+
 }
 #approach > p{
-    max-width: 250px;
+    max-width: 300px;
     margin: 0 auto;
     margin-top: 20px;
+    text-align: center
 }
 #approach .two-column-row{
-   margin-top: 30px;
+   margin-top: 80px;
+   justify-content: center;
+}
+#approach .column{
+    width: 30%;
+}
+#approach .column:last-child{
+    margin-left: 100px;
+}
+#approach .card{
+    padding: 40px 0;
+    position: relative;
+}
+#approach .column .card:first-child{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+#approach .column .card::before{
+    content: "o";
+    position: absolute;
+    left: -30px;
+    color: red;
+
 }
