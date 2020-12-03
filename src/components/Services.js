@@ -1,7 +1,10 @@
 import React from 'react';
 import "../css/Services.css"
 import { Link} from "react-scroll";
-import SEO from "../images/a-logo.png"
+import SEO from "../images/seo.png"
+import PPC from "../images/ppc.png"
+import EmailMarketing from "../images/email_mk.png"
+import DesignAndDev from "../images/design_develop.png"
 
 const Services = () => {
     return (
@@ -36,7 +39,7 @@ const Services = () => {
                         </div>
 
                         <div className="service">
-                            <img src={SEO} alt=""/>
+                            <img src={PPC} alt=""/>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google
@@ -50,7 +53,7 @@ const Services = () => {
                     <div className="services-column">
 
                         <div className="service">
-                            <img src={SEO} alt=""/>
+                            <img src={EmailMarketing} alt=""/>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google
@@ -60,7 +63,7 @@ const Services = () => {
                         </div>
 
                         <div className="service">
-                            <img src={SEO} alt=""/>
+                            <img src={DesignAndDev} alt=""/>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google
