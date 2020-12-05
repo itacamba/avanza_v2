@@ -42,6 +42,7 @@ const Navigation = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    
                 >EXPERTISE</Link>
                 <Link
                     activeClass="active"
@@ -92,6 +93,7 @@ const Navigation = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    className="active"
                 >EXPERTISE</Link>
                 <Link
                     activeClass="active"

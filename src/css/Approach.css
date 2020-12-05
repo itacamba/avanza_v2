@@ -23,20 +23,37 @@
 #approach .column{
     width: 30%;
 }
-#approach .column:last-child{
-    margin-left: 100px;
-}
 #approach .card{
     padding: 40px 0;
     position: relative;
+}
+#approach .timeline{
+    height: 100%;
+    width: 1px;
+    left: -26px;
+    height: 100%;
+    top: 45px;
+    background-color: #33ce96;
+    position: absolute;
+}
+#approach .column:last-child{
+    margin-left: 100px;
 }
 #approach .column .card:first-child{
     border-bottom: 1px solid rgba(255,255,255,.3);
 }
 #approach .column .card::before{
-    content: "o";
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     position: absolute;
-    left: -30px;
-    color: red;
+    left: -29px;
+    background: #33ce96;
+    z-index: 1;
+}
+#approach .column .card.active::before{
+    border: 5px solid rgb(37, 134, 99);
+    left: -34px;
 
 }

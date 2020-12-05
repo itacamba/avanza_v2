@@ -8,7 +8,8 @@ const Approach = () => {
             <p>We listen, craft, and connect you to take your business to the next level.</p>
             <div className="two-column-row">
                 <div className="column">
-                    <div className="card">
+                    <div className="card active">
+                        <div className="timeline"></div>
                         <h3>01. INITIAL CONSULTATION</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur 
@@ -29,6 +30,7 @@ const Approach = () => {
                 </div>
                 <div className="column">
                     <div className="card">
+                        <div className="timeline"></div>
                         <h3>01. INITIAL CONSULTATION</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur 
