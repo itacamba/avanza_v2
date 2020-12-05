@@ -29,7 +29,9 @@ const Services = () => {
                     <div className="services-column">
 
                         <div className="service">
-                            <img src={SEO} alt=""/>
+                            <div className="service-img">
+                                <img src={SEO} alt=""/>
+                            </div>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google
@@ -39,7 +41,9 @@ const Services = () => {
                         </div>
 
                         <div className="service">
-                            <img src={PPC} alt=""/>
+                            <div className="service-img">
+                                <img src={PPC} alt=""/>
+                            </div>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google
@@ -53,7 +57,9 @@ const Services = () => {
                     <div className="services-column">
 
                         <div className="service">
-                            <img src={EmailMarketing} alt=""/>
+                            <div className="service-img">
+                                <img src={EmailMarketing} alt=""/>
+                            </div>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google
@@ -63,7 +69,9 @@ const Services = () => {
                         </div>
 
                         <div className="service">
-                            <img src={DesignAndDev} alt=""/>
+                            <div className="service-img">
+                                <img src={DesignAndDev} alt=""/>
+                            </div>
                             <h3>SEARCH ENGINE OPTIMIZATION</h3>
                             <p>
                                 We help you show up in the top of the google

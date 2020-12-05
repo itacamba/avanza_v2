@@ -31,13 +31,17 @@
     align-items: center;
 }
 .service{
-    width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.service-img{
+    height: 50px;
+}
 .service img{
-    width: 50px;
+    height: 100%;
+   display: block;
 }
 .service h3{
     margin-top: 20px;
