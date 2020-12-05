@@ -9,7 +9,7 @@ const Main = () => {
             <div className="bg-img"></div>
             <div className="main-content">
                 <h3>NOVA'S #1 RATED DIGITAL MARKETING AGENCY</h3>
-                <h1>We drive persistent growth to small local businesses.</h1>
+                <h1>We drive persistent growth <br/> to small local businesses.</h1>
                 <p>Because we understand what it takes to run and grow a business.</p>
                 <Link
                     activeClass="active"
