@@ -18,6 +18,7 @@
 }
 #approach .two-column-row{
    margin-top: 80px;
+   display: flex;
    justify-content: center;
 }
 #approach .column{
@@ -27,14 +28,19 @@
     padding: 40px 0;
     position: relative;
 }
+/* timeline */
 #approach .timeline{
     height: 100%;
     width: 1px;
     left: -26px;
     height: 100%;
-    top: 45px;
+    top: 50px;
     background-color: #33ce96;
     position: absolute;
+}
+/* timeline for column-left last-child */
+#approach .column:first-child .card:last-child .timeline{
+    display:none;
 }
 #approach .column:last-child{
     margin-left: 100px;
@@ -42,18 +48,55 @@
 #approach .column .card:first-child{
     border-bottom: 1px solid rgba(255,255,255,.3);
 }
+/* timeline ball */
 #approach .column .card::before{
     content: "";
     width: 7px;
     height: 7px;
     border-radius: 50%;
     position: absolute;
+    top: 45px;
     left: -29px;
     background: #33ce96;
     z-index: 1;
 }
 #approach .column .card.active::before{
+    top: 43px;
     border: 5px solid rgb(37, 134, 99);
     left: -34px;
-
+}
+@media screen and (max-width: 950px ){
+    #approach .two-column-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    #approach .column{
+        width: 300px;
+    }
+    #approach .column:last-child{
+        margin-left: 0;
+    }
+    /* timeline */
+    #approach .timeline{
+        top: 53px
+    }
+    /* timeline for column-left last-child */
+    #approach .column:first-child .card:last-child .timeline{
+        display:block;
+    }
+    /* timeline ball */
+    #approach .column .card::before{
+        top: 47px;
+    }
+    /* active ball */
+    #approach .column .card.active::before{
+        border: 5px solid rgb(37, 134, 99);
+        top:42px;
+        left: -34px;
+    }
+}
+@media screen and (max-width: 450px ){
+    #approach .column{
+        width: 80%;
+    }
 }

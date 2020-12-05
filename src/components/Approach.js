@@ -19,6 +19,7 @@ const Approach = () => {
                         </p>
                     </div>
                     <div className="card">
+                        <div className="timeline"></div>
                         <h3>01. INITIAL CONSULTATION</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur 
