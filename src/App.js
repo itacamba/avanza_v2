@@ -2,6 +2,7 @@
 import './App.css';
 import Home from './components/Home'
 import Navigation from './Navigation'
+import WeigerDetails from './external_pages/Weiger'
 import { 
   BrowserRouter as Router,
   Switch,
@@ -16,7 +17,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path="/portfolio" component={Portfolio} /> */}
+        <Route exact path="/weiger" component={WeigerDetails} />
       </Switch>
       {/* Footer Goes Here */}
     </Router>
