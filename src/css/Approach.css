@@ -1,10 +1,11 @@
 #approach{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: blue;
+    background-color: #0A172A;
     display: flex;
     flex-direction: column;
     color: #fff;
+    border-top: .2px solid rgba(255,255,255,.1);
 }
 #approach > h2{
     text-align: center;
@@ -46,7 +47,7 @@
     margin-left: 100px;
 }
 #approach .column .card:first-child{
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: .2px solid rgba(255,255,255,.1);
 }
 /* timeline ball */
 #approach .column .card::before{

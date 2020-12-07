@@ -4,8 +4,16 @@
   box-sizing: border-box;
   font-family: 'Jost', sans-serif;
 }
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a{
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 p{
   color: #BEE0F4;
@@ -26,6 +34,10 @@ h3{
 h4{
   font-weight: 700;
   font-size: 13px;
+}
+h5{
+  font-weight: 700;
+  color: #33CE96;
 }
 ul{
   list-style-type: none;
@@ -53,9 +65,14 @@ ul{
 .gradient-btn{
   display: inline-block;
   margin-top: 30px;
-  padding: 15px 35px;
+  font-weight: 600;
+  padding: 12px 35px;
   border-radius: 50px;
-  background-color: rgb(21, 147, 151);
+  background: rgb(24,61,162);
+  background: -moz-linear-gradient(90deg, rgba(24,61,162,1) 0%, rgba(13,209,141,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(24,61,162,1) 0%, rgba(13,209,141,1) 100%);
+  background: linear-gradient(90deg, rgba(24,61,162,1) 0%, rgba(13,209,141,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#183da2",endColorstr="#0dd18d",GradientType=1);
 }
 
 /* General Styles */
@@ -80,27 +97,10 @@ figure{
   display: block;
 }
 
-element.style {
-}
-[class*=" imghvr-"]>img, [class^=imghvr-]>img {
-    vertical-align: top;
-    max-width: 100%;
-}
 .column-img img {
     width: 100%;
     display: block;
 }
-[class*=" imghvr-"], [class*=" imghvr-"] *, [class*=" imghvr-"]:after, [class*=" imghvr-"] :after, [class*=" imghvr-"]:before, [class*=" imghvr-"] :before, [class^=imghvr-], [class^=imghvr-] *, [class^=imghvr-]:after, [class^=imghvr-] :after, [class^=imghvr-]:before, [class^=imghvr-] :before {
-    box-sizing: border-box;
-    transition: all .35s ease;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
-}
-
 .column-50 figure {
   display: block;
     width: 100%;
@@ -118,16 +118,18 @@ figcaption a{
   text-decoration: none;
 }
 
-body {
-    margin: 0;
-    font-family: 'Jost', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 .column-img img{
   width: 100%;
   display: block;
 }
-@media screen and (max-width: 950px){
 
+
+/* Three Column Row*/
+.three-col-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+/* @media screen and (max-width: 950px){
+
+} */
