@@ -55,21 +55,21 @@ const Projects = () => {
                 <div className="column-50">
                     <div className="column-img fade-in">
                         {slider === 0?
-                            <figure className="imghvr-push-left" >
+                            <figure className="imghvr-shutter-out-diag-2" >
                                 <img src={HourX} alt="carla-project" />
                                 <figcaption>
                                     <Link to="/hour_x">VIEW PROJECT</Link>
                                 </figcaption>
                             </figure> 
                         : slider === 1? 
-                            <figure className="imghvr-push-left" >
+                            <figure className="imghvr-shutter-out-diag-2" >
                                 <img src={CarlaProject} alt="carla-project"/>
                                 <figcaption>
                                 <Link to="/carla_portfolio">VIEW PROJECT</Link>
                                 </figcaption>
                             </figure> 
                         : slider === 2?
-                            <figure className="imghvr-push-left" >
+                            <figure className="imghvr-shutter-out-diag-2" >
                                 <img src={WeigerProject} alt="carla-project"/>
                                 <figcaption>
                                 <Link to="/weiger">VIEW PROJECT</Link>

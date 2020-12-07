@@ -2,7 +2,7 @@
 import './App.css';
 import Home from './components/Home'
 import Navigation from './Navigation'
-import WeigerDetails from './external_pages/Weiger'
+import WeigerDetails from './detail_pages/Weiger'
 import { 
   BrowserRouter as Router,
   Switch,
