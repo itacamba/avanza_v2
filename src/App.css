@@ -68,6 +68,11 @@ ul{
 }
 .column-img{
   width: 100%;
+  opacity: 0;
+}
+.column-img.fade-in{
+  opacity: 1;
+  transition:  .2s ease-in-out;
 }
 .column-img img{
   width: 100%;
