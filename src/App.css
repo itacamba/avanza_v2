@@ -74,6 +74,56 @@ ul{
   opacity: 1;
   transition:  .2s ease-in-out;
 }
+figure{
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+element.style {
+}
+[class*=" imghvr-"]>img, [class^=imghvr-]>img {
+    vertical-align: top;
+    max-width: 100%;
+}
+.column-img img {
+    width: 100%;
+    display: block;
+}
+[class*=" imghvr-"], [class*=" imghvr-"] *, [class*=" imghvr-"]:after, [class*=" imghvr-"] :after, [class*=" imghvr-"]:before, [class*=" imghvr-"] :before, [class^=imghvr-], [class^=imghvr-] *, [class^=imghvr-]:after, [class^=imghvr-] :after, [class^=imghvr-]:before, [class^=imghvr-] :before {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.column-50 figure {
+  display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.column-50 figure img{
+  display: block;
+}
+figcaption a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .column-img img{
   width: 100%;
   display: block;

@@ -62,6 +62,7 @@
 .projects-list li:hover i{
     color: #33ce96;
 }
+
 @media screen and (max-width:950px){
     .featured-projects{
         padding: 80px 0;

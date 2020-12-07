@@ -11,6 +11,7 @@ const Home = () => {
             <Services/>
             <Approach/>
             <Projects/>
+            <Services/>
         </div>
     );
 };

@@ -4,6 +4,7 @@ import HourX from "../images/test2.jpeg"
 import WeigerProject from "../images/test1.png"
 import { Link} from "react-router-dom";
 import "../css/Projects.css"
+import "../css/imagehover.min.css"
 
 const Projects = () => {
 
@@ -54,11 +55,26 @@ const Projects = () => {
                 <div className="column-50">
                     <div className="column-img fade-in">
                         {slider === 0?
-                            <img src={HourX} alt="carla-project" />
+                            <figure className="imghvr-push-left" >
+                                <img src={HourX} alt="carla-project" />
+                                <figcaption>
+                                    <Link to="/hour_x">VIEW PROJECT</Link>
+                                </figcaption>
+                            </figure> 
                         : slider === 1? 
-                            <img src={CarlaProject} alt="carla-project"/>
+                            <figure className="imghvr-push-left" >
+                                <img src={CarlaProject} alt="carla-project"/>
+                                <figcaption>
+                                <Link to="/carla_portfolio">VIEW PROJECT</Link>
+                                </figcaption>
+                            </figure> 
                         : slider === 2?
-                            <img src={WeigerProject} alt="carla-project"/>
+                            <figure className="imghvr-push-left" >
+                                <img src={WeigerProject} alt="carla-project"/>
+                                <figcaption>
+                                <Link to="/weiger">VIEW PROJECT</Link>
+                                </figcaption>
+                            </figure> 
                         :null}
                     </div>
                 </div>
