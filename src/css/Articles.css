@@ -19,12 +19,15 @@
     width: 30%;
     position: relative;
 }
+.article figure{
+    display: block;
+}
 .article-text{
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 15px;
     z-index: 1;
+    padding: 15px;
 }
 .article-text p{
     margin-top: 0px;
@@ -42,4 +45,23 @@
     padding: 2px 15px;
     color: rgb(32, 8, 119);
     margin-bottom: 10px;
+}
+@media screen and (max-width:950px){
+    #articles .three-col-row{
+        flex-wrap: wrap;
+    }
+    #articles .three-col-row .article{
+        height: 400px;
+    }
+    #articles .article figure{
+        border-radius: 5px;
+        height: 150px;
+    }
+    #articles .article-text{
+        top: 160px;
+        padding: 0;
+    }
+    #articles .article:hover .article-text{
+        display: block;
+    }
 }
