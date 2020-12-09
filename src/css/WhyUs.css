@@ -6,7 +6,7 @@
 #why-us p{
     max-width: 340px;;
 }
-#why-us .card{
+#why-us > .card{
     width: 28%;
 }
 #why-us .card > p{
@@ -39,10 +39,15 @@
 @media screen and (max-width:550px){
     #why-us .three-col-row{
         flex-direction: column;
+        margin: 0 auto;
     }
     #why-us .card{
         max-width: 400px;
         width: 100%;
+       
+    }
+    #why-us .three-col-row .card:nth-child(2){
+        margin-right: 0;
     }
     #why-us .three-col-row .card:last-child{
         margin-left: 0;

@@ -142,7 +142,7 @@ figcaption a{
 .card{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  /* width: 30%; */
 }
 .card-icon{
   height: 40px;

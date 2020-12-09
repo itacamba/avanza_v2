@@ -95,6 +95,9 @@
         top:42px;
         left: -34px;
     }
+    #approach .column .card:nth-child(2){
+        border-bottom: .2px solid rgba(255,255,255,.1);
+    }
 }
 @media screen and (max-width: 450px ){
     #approach .column{
