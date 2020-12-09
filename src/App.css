@@ -74,6 +74,15 @@ ul{
   background: linear-gradient(90deg, rgba(24,61,162,1) 0%, rgba(13,209,141,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#183da2",endColorstr="#0dd18d",GradientType=1);
 }
+.blue-btn{
+  display: inline-block;
+  background-color: #1584d5;
+  margin-top: 30px;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-align: center;
+}
 
 /* General Styles */
 .two-column-row{
@@ -129,6 +138,18 @@ figcaption a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.card-icon{
+  height: 40px;
+
+}
+.card-icon img{
+  height: 100%;
+  display: block;
 }
 /* @media screen and (max-width: 950px){
 

@@ -59,7 +59,7 @@ const Articles = () => {
                             <img src={Blog2} alt="blog-2"/>
                         : null}
                         <figcaption>
-                            <Link to={`/${article.link}`}>VIEW PROJECT</Link>
+                            <Link to={`/${article.link}`}>READ POST</Link>
                         </figcaption>
                     </figure> 
                 </div>

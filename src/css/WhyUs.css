@@ -1,0 +1,19 @@
+#why-us{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #0A172A;
+}
+
+#why-us .card{
+    width: 28%;
+}
+#why-us .card > p{
+    color: rgba(10, 23, 42, 0.63);
+}
+
+#why-us .blue-btn{
+    width: 110px;
+}
+#why-us .card-icon{
+    margin-bottom: 20px;
+}

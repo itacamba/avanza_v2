@@ -4,6 +4,7 @@ import Approach from './Approach';
 import Articles from './Articles';
 import Main from "./Main"
 import Services from './Services';
+import WhyUs from './WhyUs';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Approach/>
             <Projects/>
             <Articles/>
+            <WhyUs/>
         </div>
     );
 };
