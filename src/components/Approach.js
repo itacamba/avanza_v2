@@ -4,8 +4,10 @@ import "../css/Approach.css"
 const Approach = () => {
     return (
         <div className="full-90" id="approach">
-            <h2>Here's How We Do It</h2>
-            <p>We listen, craft, and connect you to take your business to the next level.</p>
+            <div className="approach-header">
+                <h2>Here's How We Do It</h2>
+                <p>We listen, craft, and connect you to take your business to the next level.</p>
+            </div>
             <div className="two-column-row">
                 <div className="column">
                     <div className="card active">

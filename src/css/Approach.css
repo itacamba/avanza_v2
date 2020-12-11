@@ -7,11 +7,13 @@
     color: #fff;
     border-top: .2px solid rgba(255,255,255,.1);
 }
-#approach > h2{
+#approach .approach-header h2{
     text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
 
 }
-#approach > p{
+#approach .approach-header p{
     max-width: 300px;
     margin: 0 auto;
     margin-top: 20px;
@@ -67,6 +69,12 @@
     left: -34px;
 }
 @media screen and (max-width: 950px ){
+    #approach .approach-header h2{
+       text-align: left;
+    }
+    #approach .approach-header p{
+        text-align: left;
+    }
     #approach .two-column-row{
         flex-direction: column;
         align-items: center;
