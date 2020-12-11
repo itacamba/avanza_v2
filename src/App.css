@@ -112,8 +112,8 @@ figure{
 }
 .column-50 figure {
   display: block;
-    width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
 
 .column-50 figure img{

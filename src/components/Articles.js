@@ -47,7 +47,7 @@ const Articles = () => {
                 <div key={i} className="article">
                     <div className="article-text">
                         {article.new? <button className="new-article">New</button> : null}
-                        <h2>{article.title}</h2>
+                        <Link to={`/${article.link}`}>{article.title}</Link>
                         <p>{article.readTime}</p>
                     </div>
                     <figure className="imghvr-slide-left">
@@ -59,7 +59,7 @@ const Articles = () => {
                             <img src={Blog2} alt="blog-2"/>
                         : null}
                         <figcaption>
-                            <Link to={`/${article.link}`}>READ POST</Link>
+                            <Link to={`/${article.link}`}>READ </Link>
                         </figcaption>
                     </figure> 
                 </div>
