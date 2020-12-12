@@ -7,6 +7,34 @@ import EmailMarketing from "../images/email_mk.png"
 import DesignAndDev from "../images/design_develop.png"
 
 const Services = () => {
+    const servicesColumnLeft = [
+        {
+            title: "SEARCH ENGINE OPTIMIZATION",
+            content: `We help you show up in the top of the google
+            search results to ensure your potential customers
+            interact with your brand/business.`,
+        },
+        {
+            title: "PAY PER CLICK",
+            content: `We help you show up in the top of the google
+            search results to ensure your potential customers
+            interact with your brand/business.`,
+        }
+    ]
+    const servicesColumnRight = [
+        {
+            title: "WEBSITE DESIGN ",
+            content: `We help you show up in the top of the google
+            search results to ensure your potential customers
+            interact with your brand/business.`,
+        },
+        {
+            title: "SEARCH ENGINE OPTIMIZATION",
+            content: `We help you show up in the top of the google
+            search results to ensure your potential customers
+            interact with your brand/business.`,
+        },
+    ]
     return (
         <div className="full-90" id="services">
             <div className="services-content">
@@ -27,58 +55,36 @@ const Services = () => {
                 </div>
                 <div className="services-right">
                     <div className="services-column">
-
-                        <div className="service">
-                            <div className="service-img">
-                                <img src={SEO} alt=""/>
-                            </div>
-                            <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                            <p>
-                                We help you show up in the top of the google
-                                search results to ensure your potential customers
-                                interact with your brand/business.
-                            </p>
-                        </div>
-
-                        <div className="service">
-                            <div className="service-img">
-                                <img src={PPC} alt=""/>
-                            </div>
-                            <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                            <p>
-                                We help you show up in the top of the google
-                                search results to ensure your potential customers
-                                interact with your brand/business.
-                            </p>
-                        </div>
-
+                        {servicesColumnLeft.map( (service, i) => {
+                           return <div className="service">
+                                    <div className="service-img">
+                                        {i === 0?
+                                            <img src={EmailMarketing} alt=""/>
+                                        : <img src={DesignAndDev} alt=""/>
+                                        }
+                                        
+                                    </div>
+                                    <h3>{service.title}</h3>
+                                    <p>{service.content}</p>
+                                  </div>
+                        })}
                     </div>
 
                     <div className="services-column">
 
-                        <div className="service">
-                            <div className="service-img">
-                                <img src={EmailMarketing} alt=""/>
-                            </div>
-                            <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                            <p>
-                                We help you show up in the top of the google
-                                search results to ensure your potential customers
-                                interact with your brand/business.
-                            </p>
-                        </div>
-
-                        <div className="service">
-                            <div className="service-img">
-                                <img src={DesignAndDev} alt=""/>
-                            </div>
-                            <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                            <p>
-                                We help you show up in the top of the google
-                                search results to ensure your potential customers
-                                interact with your brand/business.
-                            </p>
-                        </div>
+                        {servicesColumnRight.map( (service, i) => {
+                            return <div className="service">
+                                        <div className="service-img">
+                                            {i === 0?
+                                                <img src={SEO} alt=""/>
+                                            : <img src={PPC} alt=""/>
+                                            }
+                                            
+                                        </div>
+                                        <h3>{service.title}</h3>
+                                        <p>{service.content}</p>
+                                    </div>
+                            })}
                         
                     </div>
                 </div>

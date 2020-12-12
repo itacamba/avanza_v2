@@ -59,7 +59,7 @@ ul{
 /* full-90 will occupy 100% width and 10% padding on both sides */
 .full-90{
   width: 100%;
-  padding: 0 5%;
+  padding: 0 10%;
 }
 /* Gradient Buttons */
 .gradient-btn{
