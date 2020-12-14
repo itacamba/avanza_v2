@@ -153,11 +153,5 @@ figcaption a{
   display: block;
 }
 @media screen and (max-width:950px){
-  /* .three-col-row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .three-col-row .card{
-    flex: 40%;
-  } */
+
 }
