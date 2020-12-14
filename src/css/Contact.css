@@ -1,0 +1,74 @@
+#contact{
+    background-color: #0A172A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#contact h2{
+    font-size: 40px;
+    color: #fff;
+}
+#contact .column-50:first-child p{
+    color: rgba(190, 224, 244, 0.74);
+    padding-bottom: 30px;
+    border-bottom: .2px solid rgba(190, 224, 244, 0.3);
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+}
+#contact .column-50:first-child{
+    max-width: 420px;
+}
+#contact .column-50:last-child{
+max-width: 500px;
+}
+.error{
+    display: none;
+}
+.name-phone{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form-input{
+    border: 1px solid rgba(190, 224, 244, 0.74);
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 7px;
+    padding-left: 15px;
+    width: 100%;
+    outline: none;
+}
+#contact form h4{
+    margin-bottom: 20px;
+    color: #fff;
+}
+#contact ::placeholder{
+    color: rgba(190, 224, 244, 0.7)
+}
+.full-name{
+    margin-right: 5px;
+}
+.phone{
+    margin-left: 5px;
+}
+.email, .website{
+    margin-bottom: 20px;
+}
+.message{
+    border: none;
+    background: transparent;
+    border-radius: 17px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: 1px solid rgba(190, 224, 244, 0.74);
+    outline: none;
+}
+input[type="submit"]{
+    border: none;
+    display: inline;
+    color: #fff;
+    display: block;
+    width: 120px;
+}
