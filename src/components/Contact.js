@@ -1,7 +1,28 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import "../css/Contact.css"
 
 const Contact = () => {
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const errorJs = document.querySelector('.email-js-error')
+        emailjs.sendForm('service_t2dxw3t', 'template_hmp4tfm', e.target, 'user_XiMZOd167CfBlFaRvEfg3')
+  
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error)
+              errorJs.style.display = "block"
+              setTimeout(()=>{
+                  errorJs.style.display = "none"
+              },3000)
+          });
+      }
+
+
+
     return (
         <div className="full-90" id="contact">
             <div className="two-column-row">

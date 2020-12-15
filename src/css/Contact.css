@@ -40,6 +40,7 @@ max-width: 500px;
     padding-left: 15px;
     width: 100%;
     outline: none;
+    color: rgba(190, 224, 244, 0.74)
 }
 #contact form h4{
     margin-bottom: 20px;
@@ -65,6 +66,7 @@ max-width: 500px;
     padding-left: 15px;
     border: 1px solid rgba(190, 224, 244, 0.74);
     outline: none;
+    color: rgba(190, 224, 244, 0.74)
 }
 input[type="submit"]{
     border: none;

@@ -70,7 +70,8 @@
 }
 @media screen and (max-width: 580px ){
     #services{
-        background-color: rgb(48, 72, 138);
+        background: #0f2635;
+        /* background-color: rgb(48, 72, 138); */
     }
     .services-content{
         padding: 0;
