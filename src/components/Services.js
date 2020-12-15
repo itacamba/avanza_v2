@@ -56,7 +56,7 @@ const Services = () => {
                 <div className="services-right">
                     <div className="services-column">
                         {servicesColumnLeft.map( (service, i) => {
-                           return <div className="service">
+                           return <div className="service" key={i}>
                                     <div className="service-img">
                                         {i === 0?
                                             <img src={EmailMarketing} alt=""/>
@@ -73,7 +73,7 @@ const Services = () => {
                     <div className="services-column">
 
                         {servicesColumnRight.map( (service, i) => {
-                            return <div className="service">
+                            return <div className="service"  key={i}>
                                         <div className="service-img">
                                             {i === 0?
                                                 <img src={SEO} alt=""/>

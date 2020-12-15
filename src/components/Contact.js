@@ -14,18 +14,18 @@ const Contact = () => {
                 </div>
                 <div className="column-50">
                     <form >
-                        <p class="error"></p>
+                        <p className="error"></p>
 
                         <div className="name-phone">
-                            <input type="text" value="" placeholder="Full Name" name="name" className="form-input full-name" require />
-                            <input type="tel" value="" placeholder="Phone Number (000 000 0000)"  name="phone" className="form-input phone" require/>
+                            <input type="text"  placeholder="Full Name" name="name" className="form-input full-name" />
+                            <input type="tel" placeholder="Phone Number (000 000 0000)"  name="phone" className="form-input phone" />
                         </div>
 
-                        <input type="email" value="" placeholder="Email" name="email" className="form-input email" require/>
+                        <input type="email" placeholder="Email" name="email" className="form-input email"/>
                         
-                        <input type="text" value=""placeholder="Website (optional)" name="website_url" className="form-input website"/>
+                        <input type="text" placeholder="Website (optional)" name="website_url" className="form-input website"/>
                         <h4>Tell us about your business and needs *</h4>
-                        <textarea type="text" value="" name="message" className="message" rows="5" placeholder="Your message goes here" require></textarea>
+                        <textarea type="text" name="message" className="message" rows="5" placeholder="Your message goes here"></textarea>
 
                         <input type="submit" value="Submit" name="submit" className="gradient-btn"/>
                     </form>
