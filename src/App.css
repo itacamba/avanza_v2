@@ -73,6 +73,8 @@ ul{
   background: -webkit-linear-gradient(90deg, rgba(24,61,162,1) 0%, rgba(13,209,141,1) 100%);
   background: linear-gradient(90deg, rgba(24,61,162,1) 0%, rgba(13,209,141,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#183da2",endColorstr="#0dd18d",GradientType=1);
+  outline: none;
+  cursor: pointer;
 }
 .blue-btn{
   display: inline-block;
