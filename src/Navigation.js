@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import Logo from "./images/logo.png"
 import MobileLogo from "./images/avanza.png"
 import X from "./images/x.png"
@@ -8,6 +8,43 @@ import "./Navigation.css"
 const Navigation = () => {
 
     const [mobileMenu, setMobileMenu] = useState(false) 
+
+     // hide-show header on scroll
+     const prevScrollY = useRef(0);
+
+     const [goingDown, setGoingDown] = useState(true);
+   
+     useEffect(() => {
+       const handleScroll = () => {
+         const currentScrollY = window.scrollY;
+         // will hide the navbar only after 400px
+         if (prevScrollY.current < currentScrollY && goingDown && currentScrollY > 400) {
+           setGoingDown(false);
+           const header = document.getElementById("header")
+           header.classList.add('slide-up')
+           setMobileMenu(false)
+         //   console.log("going down")
+         }
+         if (prevScrollY.current > currentScrollY && !goingDown) {
+           setGoingDown(true);
+           const header = document.getElementById("header")
+           header.classList.remove('slide-up')
+         //   console.log("going up")
+ 
+         }
+   
+         prevScrollY.current = currentScrollY;
+         // The following  line of code gives us the Y coordinates
+         // console.log(goingDown, currentScrollY);
+       };
+   
+       window.addEventListener("scroll", handleScroll, { passive: true });
+   
+       return () => window.removeEventListener("scroll", handleScroll);
+     }, [goingDown]);
+
+
+
 
     return (
         <header className="full-90" id="header">

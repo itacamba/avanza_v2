@@ -155,5 +155,7 @@ figcaption a{
   display: block;
 }
 @media screen and (max-width:950px){
-
+  .full-90{
+    padding: 0 5%;
+  }
 }

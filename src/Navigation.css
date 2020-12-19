@@ -7,6 +7,12 @@
     position: fixed;
     color: #f2f2f2;
     z-index: 1;
+    transform: translateY(0);
+    transition: .5s ease-out;
+}
+#header.slide-up{
+    transform: translateY(-100%);
+    transition: .5s ease-in;
 }
 .nav {
     display: flex;
@@ -42,9 +48,10 @@
     left:0;
     background-color: #071222;
     transition: .3s ease-in;
+    transform: translateY(0)
 }
 .mobile-nav.hide{
-    top: -100%;
+   transform: translateY(-100%);
 }
 .mobile-nav-links{
     display: flex;

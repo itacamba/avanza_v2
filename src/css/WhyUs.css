@@ -22,6 +22,7 @@
 @media screen and (max-width:950px){
     #why-us .three-col-row{
         flex-wrap: wrap;
+
     }
     #why-us .three-col-row .card:first-child{
         flex: 100%;
@@ -42,7 +43,7 @@
         margin: 0 auto;
     }
     #why-us .card{
-        max-width: 400px;
+        max-width: 100%;
         width: 100%;
        
     }
